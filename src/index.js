@@ -10,7 +10,13 @@ carousel.className = 'carousel';
 
 const cover = document.querySelector('.cover');
 cover.addEventListener('click', ()=>{
-    cover.remove()
+    const circleAnimationWrite = document.querySelector('.cicle--write')
+    circleAnimationWrite.style.display = 'block';
+    circleAnimationWrite.style.animation = 'tapWrite 1s';
+    setTimeout(()=>{
+        circleAnimationWrite.remove();
+        cover.remove()
+    },450)
 })
 
 const formContainer = document.querySelector('.categories__form__container')
