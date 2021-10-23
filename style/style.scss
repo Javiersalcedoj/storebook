@@ -53,6 +53,7 @@ html {
 .categories {
     width: 80%;
     .categories__h2 {
+        margin-top: 30px;
         text-align: center;
         font-size: 2rem;
         font-weight: 600;
@@ -70,9 +71,9 @@ html {
         border-radius: 7px;
         background: $blue;
     }
-    .categories__from {
+    .categories__form {
         margin-top: 20px;
-        label {
+        .categories__form__container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;

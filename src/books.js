@@ -1,4 +1,4 @@
-import{ categoryFinance, categoryTecnology, categoryHealth} from "./categorie.js"
+import{ categoryFinance, categoryTecnología, categoryHealth} from "./categorie.js"
 class Book {
     constructor({name, author, description, img}){
         this.name =  name;
@@ -17,7 +17,7 @@ class Book {
 const bookAprendeIA = new Book ({name:'Aprende IA', author: 'unknown', description: 'here is a description', img: './img/Portada.png'});
 const bookProgramar = new Book ({name:'Programar', author: 'unknown', description: 'here is a description', img: './img/Portada.png'});
 const bookJavascript = new Book ({name:'JavaScript', author: 'unknown', description: 'here is a description', img: './img/Portada.png'});
-categoryTecnology.addRecomendation([bookAprendeIA, bookProgramar, bookJavascript]);
+categoryTecnología.addRecomendation([bookAprendeIA, bookProgramar, bookJavascript]);
 
 const bookInvierte = new Book ({name:'Invierte', author: 'unknown', description: 'here is a description', img: './img/Portada.png'})
 const bookFinanzas = new Book ({name:'Finanzas', author: 'unknown', description: 'here is a description', img: './img/Portada.png'})

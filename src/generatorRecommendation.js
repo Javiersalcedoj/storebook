@@ -8,11 +8,8 @@ function printDOM (category){
     //creamos y agregamos elementos al contenedor de la categia
     const h2 =  document.createElement('h2');
     h2.innerText = `${category.name}`;
-
-    // const p = document.createElement('p');
-    // p.innerText = 'Estas son nuestras recomendaciones:';
     
-    containerCategory.append(h2) //aqui va p 
+    containerCategory.append(h2)
 
     //creamos el contenedor de los libros
     const contianerBook = document.createElement('div');

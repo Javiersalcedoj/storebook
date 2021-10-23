@@ -79,6 +79,7 @@ html {
 }
 
 .categories .categories__h2 {
+  margin-top: 30px;
   text-align: center;
   font-size: 2rem;
   font-weight: 600;
@@ -98,11 +99,11 @@ html {
   background: #0D47A1;
 }
 
-.categories .categories__from {
+.categories .categories__form {
   margin-top: 20px;
 }
 
-.categories .categories__from label {
+.categories .categories__form .categories__form__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,7 +116,7 @@ html {
   height: auto;
 }
 
-.categories .categories__from label .button {
+.categories .categories__form .categories__form__container .button {
   margin-right: 5px;
   padding: 3px;
   border: 1px solid grey;
@@ -123,7 +124,7 @@ html {
   background: white;
 }
 
-.categories .categories__from .categories__button--submit {
+.categories .categories__form .categories__button--submit {
   width: 150px;
   height: 30px;
   padding: 3px;
@@ -136,7 +137,7 @@ html {
   background: #0D47A1;
 }
 
-.categories .categories__from .messageError {
+.categories .categories__form .messageError {
   margin-top: 5px;
   font-weight: 400;
   text-align: center;
