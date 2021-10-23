@@ -1,0 +1,64 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.categories .categories__h2 {
+  color: #3232f5;
+}
+
+.categories .categories__button--chooseAgain {
+  margin-right: 5px;
+  padding: 3px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background: #9b76bd;
+}
+
+.categories .categories__from {
+  margin-top: 20px;
+}
+
+.categories .categories__from .button {
+  margin-right: 5px;
+  padding: 3px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background: white;
+}
+
+.categories .categories__from .categories__button--submit {
+  margin-right: 5px;
+  padding: 3px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background: #9b76bd;
+}
+
+.carousel {
+  margin-top: 20px;
+}
+
+.carousel .carousel__book__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.carousel .carousel__book__container .carousel__book {
+  width: 150px;
+  height: auto;
+  padding: 5px;
+  margin-left: 10px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.carousel .carousel__book__container .carousel__book .carousel__book--img {
+  width: 100px;
+}
+/*# sourceMappingURL=style.css.map */

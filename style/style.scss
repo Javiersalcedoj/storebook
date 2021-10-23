@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.categories {
+    .categories__h2 {
+        color: rgb(50, 50, 245);
+    }
+    .categories__button--chooseAgain {
+        margin-right: 5px;
+        padding: 3px;
+        border: 1px solid grey;
+        border-radius: 5px;
+        background: rgb(155, 118, 189);
+    }
+    .categories__from {
+        margin-top: 20px;
+        .button {
+            margin-right: 5px;
+            padding: 3px;
+            border: 1px solid grey;
+            border-radius: 5px;
+            background: white;
+        }
+        .categories__button--submit {
+            margin-right: 5px;
+            padding: 3px;
+            border: 1px solid grey;
+            border-radius: 5px;
+            background: rgb(155, 118, 189);
+        }
+    }
+}
+.carousel {
+    margin-top: 20px;
+    .carousel__book__container {
+        display: flex;
+        margin-top: 20px;
+        .carousel__book{
+            width: 150px;
+            height: auto;
+            padding: 5px;
+            margin-left: 10px;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 10px;
+            .carousel__book--img {
+                width: 100px;
+            }
+        }
+    }
+}
