@@ -3,25 +3,119 @@
           box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background: #0D47A1;
+}
+
+.header .header__logo {
+  width: 100px;
+}
+
+.header .header__logo .header__logo--curva, .header .header__logo .header__logo--line {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 10px;
+  stroke-linecap: round;
+}
+
+.header .header__title {
+  margin-top: 10px;
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+}
+
+.header .header__p {
+  width: 70%;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: white;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.categories {
+  width: 80%;
 }
 
 .categories .categories__h2 {
-  color: #3232f5;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
 }
 
-.categories .categories__button--chooseAgain {
-  margin-right: 5px;
+.categories .categies__button--chooseAgain {
+  width: 150px;
+  height: 30px;
   padding: 3px;
-  border: 1px solid grey;
-  border-radius: 5px;
-  background: #9b76bd;
+  margin-top: 20px;
+  margin-left: calc(50% - 75px);
+  font-weight: 500;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  background: #0D47A1;
 }
 
 .categories .categories__from {
   margin-top: 20px;
 }
 
-.categories .categories__from .button {
+.categories .categories__from label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.categories .categories__from label .button {
   margin-right: 5px;
   padding: 3px;
   border: 1px solid grey;
@@ -30,35 +124,82 @@
 }
 
 .categories .categories__from .categories__button--submit {
-  margin-right: 5px;
+  width: 150px;
+  height: 30px;
   padding: 3px;
-  border: 1px solid grey;
-  border-radius: 5px;
-  background: #9b76bd;
+  margin-top: 20px;
+  margin-left: calc(50% - 75px);
+  font-weight: 500;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  background: #0D47A1;
+}
+
+.categories .categories__from .messageError {
+  margin-top: 5px;
+  font-weight: 400;
+  text-align: center;
+  color: #0D47A1;
 }
 
 .carousel {
-  margin-top: 20px;
+  width: 80%;
+  margin-top: 10px;
+}
+
+.carousel .carousel__category h2 {
+  margin-top: 10px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: black;
 }
 
 .carousel .carousel__book__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 20px;
+  margin-top: 15px;
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.carousel .carousel__book__container::-webkit-scrollbar {
+  display: none;
 }
 
 .carousel .carousel__book__container .carousel__book {
-  width: 150px;
-  height: auto;
-  padding: 5px;
-  margin-left: 10px;
+  position: relative;
+  margin-right: 10px;
+  padding: 15px;
   text-align: center;
-  border: 2px solid black;
   border-radius: 10px;
+}
+
+.carousel .carousel__book__container .carousel__book:hover {
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
 }
 
 .carousel .carousel__book__container .carousel__book .carousel__book--img {
   width: 100px;
+  -webkit-box-shadow: -4px -2px 2px -1px grey;
+          box-shadow: -4px -2px 2px -1px grey;
+}
+
+.carousel .carousel__book__container .carousel__book .carousel__book--name {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.carousel .carousel__book__container .carousel__book .carousel__book--autor {
+  font-size: 1.2rem;
+}
+
+.carousel .carousel__book__container .carousel__book .carousel__book--description {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

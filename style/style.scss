@@ -1,52 +1,155 @@
+$blue: #0D47A1;
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background: $blue;
+    .header__logo {
+        width: 100px;
+        .header__logo--curva, .header__logo--line{
+            fill:none;
+            stroke:#fff;
+            stroke-width:10px;
+            stroke-linecap:round;
+        }  
+    }
+    .header__title {
+        margin-top: 10px;
+        font-size: 3rem;
+        font-weight: 800;
+        color: white;
+    }
+    .header__p {
+        width: 70%;
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: white;
+    }
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+
 }
 .categories {
+    width: 80%;
     .categories__h2 {
-        color: rgb(50, 50, 245);
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 600;
+        color: black
     }
-    .categories__button--chooseAgain {
-        margin-right: 5px;
+    .categies__button--chooseAgain {
+        width: 150px;
+        height: 30px;
         padding: 3px;
-        border: 1px solid grey;
-        border-radius: 5px;
-        background: rgb(155, 118, 189);
+        margin-top: 20px;
+        margin-left: calc(50% - 75px);
+        font-weight: 500;
+        color: white;
+        border: none;
+        border-radius: 7px;
+        background: $blue;
     }
     .categories__from {
         margin-top: 20px;
-        .button {
-            margin-right: 5px;
-            padding: 3px;
-            border: 1px solid grey;
-            border-radius: 5px;
-            background: white;
+        label {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            .button {
+                margin-right: 5px;
+                padding: 3px;
+                border:1px solid grey;
+                border-radius: 5px;
+                background: white;
+            }
         }
         .categories__button--submit {
-            margin-right: 5px;
+            width: 150px;
+            height: 30px;
             padding: 3px;
-            border: 1px solid grey;
-            border-radius: 5px;
-            background: rgb(155, 118, 189);
+            margin-top: 20px;
+            margin-left: calc(50% - 75px);
+            font-weight: 500;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            background: $blue;
+        }
+        .messageError {
+            margin-top: 5px;
+            font-weight: 400;;
+            text-align: center;
+            color: $blue;
         }
     }
 }
 .carousel {
-    margin-top: 20px;
+    width: 80%;
+    margin-top: 10px;
+    .carousel__category {
+        h2 {
+            margin-top: 10px;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: black
+        }
+    }
     .carousel__book__container {
         display: flex;
-        margin-top: 20px;
+        margin-top: 15px;
+        width: 100%;
+        min-height: 200px;
+        height: auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        &::-webkit-scrollbar{
+            display: none;
+        }
         .carousel__book{
-            width: 150px;
-            height: auto;
-            padding: 5px;
-            margin-left: 10px;
+            position: relative;
+            margin-right: 10px;
+            padding: 15px;
             text-align: center;
-            border: 2px solid black;
             border-radius: 10px;
+            &:hover{
+                transform: scale(110%);
+            }
             .carousel__book--img {
                 width: 100px;
+                box-shadow: -4px -2px 2px -1px grey;
+            }
+            .carousel__book--name {
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+            .carousel__book--autor {
+                font-size: 1.2rem;
+            }
+            .carousel__book--description {
+                display: none;
             }
         }
     }

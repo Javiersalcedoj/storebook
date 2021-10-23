@@ -3,16 +3,16 @@ import { carousel } from "./index.js";
 function printDOM (category){
     //creamos el contenedor de la categoria
     const containerCategory = document.createElement('div');
-    containerCategory.className = 'carousel__category';
+    containerCategory.className = `carousel__category ${category.name}`;
 
     //creamos y agregamos elementos al contenedor de la categia
     const h2 =  document.createElement('h2');
     h2.innerText = `${category.name}`;
 
-    const p = document.createElement('p');
-    p.innerText = 'Estas son nuestras recomendaciones:';
+    // const p = document.createElement('p');
+    // p.innerText = 'Estas son nuestras recomendaciones:';
     
-    containerCategory.append(h2, p)
+    containerCategory.append(h2) //aqui va p 
 
     //creamos el contenedor de los libros
     const contianerBook = document.createElement('div');
@@ -23,28 +23,22 @@ function printDOM (category){
         const book = document.createElement('div');
         book.className = 'carousel__book';
 
-        const name = element.name;
-        const h3 = document.createElement('h3');
-        h3.className = 'carousel__book--name'
-        h3.innerText = name;
-
         const url = element.img;
         const img = document.createElement('img');
         img.className = 'carousel__book--img'
         img.src = url;
+
+        const name = element.name;
+        const h3 = document.createElement('h3');
+        h3.className = 'carousel__book--name'
+        h3.innerText = name;
 
         const author = element.author;
         const pAuthor = document.createElement('p');
         pAuthor.className = 'carousel__book--autor'
         pAuthor.innerText = `Autor: ${author}`;
 
-
-        const description = element.description;
-        const pDescription = document.createElement('p');
-        pDescription.className = 'carousel__book--description'
-        pDescription.innerText = description;
-
-        book.append(h3, img, pAuthor, pDescription);
+        book.append(img, h3, pAuthor);
         contianerBook.appendChild(book);
     })  
 
