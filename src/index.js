@@ -1,4 +1,4 @@
-import { Categorie, categoryFinance, categoryTecnology, categoryHealth } from "./categorie.js";
+import { Categorie, categoryFinance, categoryTecnology, categoryHealth, instanceCounter } from "./categorie.js";
 import { Book, bookSaludHumana, bookProgramar, bookJavascript, bookInvierte, bookFinanzas, bookAprendeIA} from "./books.js";
 import { printDOM } from "./generatorRecommendation.js";
 import { chooseAgain, sectionCategories } from "./submit.js";
