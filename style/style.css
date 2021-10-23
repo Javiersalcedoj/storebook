@@ -10,7 +10,7 @@ html {
   font-size: 62.5%;
 }
 
-.header {
+.cover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,25 +31,25 @@ html {
   background: #0D47A1;
 }
 
-.header .header__logo {
+.cover .coverlogo {
   width: 100px;
 }
 
-.header .header__logo .header__logo--curva, .header .header__logo .header__logo--line {
+.cover .coverlogo .coverlogo--curva, .cover .coverlogo .coverlogo--line {
   fill: none;
   stroke: #fff;
   stroke-width: 10px;
   stroke-linecap: round;
 }
 
-.header .header__title {
+.cover .covertitle {
   margin-top: 10px;
   font-size: 3rem;
   font-weight: 800;
   color: white;
 }
 
-.header .header__p {
+.cover .coverp {
   width: 70%;
   font-size: 1.5rem;
   font-weight: 300;

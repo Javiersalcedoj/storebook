@@ -8,9 +8,9 @@ const main = document.querySelector('.main')
 const carousel = document.createElement ('section');
 carousel.className = 'carousel';
 
-const header = document.querySelector('.header');
-header.addEventListener('click', ()=>{
-    header.remove()
+const cover = document.querySelector('.cover');
+cover.addEventListener('click', ()=>{
+    cover.remove()
 })
 
 const validation = {
