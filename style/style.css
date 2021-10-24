@@ -33,6 +33,7 @@ html {
 
 .cover .coverlogo {
   width: 100px;
+  cursor: pointer;
 }
 
 .cover .coverlogo .coverlogo--curva, .cover .coverlogo .coverlogo--line {
@@ -47,6 +48,7 @@ html {
   font-size: 3rem;
   font-weight: 800;
   color: white;
+  cursor: pointer;
 }
 
 .cover .coverp {
@@ -54,6 +56,7 @@ html {
   font-size: 1.5rem;
   font-weight: 300;
   color: white;
+  cursor: pointer;
 }
 
 .main {
@@ -97,6 +100,7 @@ html {
   border: none;
   border-radius: 7px;
   background: #0D47A1;
+  cursor: pointer;
 }
 
 .categories .categories__form {
@@ -122,6 +126,7 @@ html {
   border: 1px solid grey;
   border-radius: 5px;
   background: white;
+  cursor: pointer;
 }
 
 .categories .categories__form .categories__button--submit {
@@ -135,6 +140,7 @@ html {
   border: none;
   border-radius: 7px;
   background: #0D47A1;
+  cursor: pointer;
 }
 
 .categories .categories__form .messageError {
@@ -189,6 +195,7 @@ html {
   width: 100px;
   -webkit-box-shadow: -4px -2px 2px -1px grey;
           box-shadow: -4px -2px 2px -1px grey;
+  cursor: pointer;
 }
 
 .carousel .carousel__book__container .carousel__book .carousel__book--name {
@@ -202,5 +209,68 @@ html {
 
 .carousel .carousel__book__container .carousel__book .carousel__book--description {
   display: none;
+}
+
+.infoBook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: none;
+  z-index: 10;
+}
+
+.infoBook .infoBook__container {
+  position: relative;
+  width: 90%;
+  max-width: 450px;
+  height: auto;
+  padding: 10px;
+  margin: auto;
+  border: 5px solid grey;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.infoBook .infoBook__container .infoBook__container__content .content--title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.infoBook .infoBook__container .infoBook__container__content .content--author {
+  margin-bottom: 4px;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.infoBook .infoBook__container .infoBook__container__content .content--description {
+  margin: 5px 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.infoBook .infoBook__container .infoBook__container__content .content--p {
+  font-size: 1.3rem;
+}
+
+.infoBook .infoBook__container .infoBook__container__content .content--button {
+  width: 150px;
+  height: 30px;
+  padding: 3px;
+  margin-top: 5px;
+  margin-left: calc(50% - 75px);
+  font-weight: 500;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  background: #0D47A1;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

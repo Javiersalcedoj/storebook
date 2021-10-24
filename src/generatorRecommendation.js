@@ -15,15 +15,19 @@ function printDOM (category){
     const contianerBook = document.createElement('div');
     contianerBook.className = 'carousel__book__container';
 
+    let counter = 0
     //creamos cada libro y lo agregamos al contenedor de los libros
     category.recommendation.forEach(element => {
         const book = document.createElement('div');
         book.className = 'carousel__book';
 
+
         const url = element.img;
         const img = document.createElement('img');
         img.className = 'carousel__book--img'
         img.src = url;
+        img.id = `${category.name}-${counter}`;
+        counter++;
 
         const name = element.name;
         const h3 = document.createElement('h3');
