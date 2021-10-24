@@ -18,8 +18,13 @@ class Categorie {
     }
 }
 
-const categoryTecnología = new Categorie ({name: 'Tecnología', topics: ['ia', 'web']});
-const categoryFinance = new Categorie ({name: 'Finanzas', topics: ['inversiones', 'emprendemiento']});
-const categoryHealth = new Categorie ({name: 'Salud', topics: ['salud humana', 'bienestar']});
+const categoryEmpresa = new Categorie({name :'Empresa', topics: ['Emprendimiento','start-ups','Servicios','Gestión']});
+const categoryBiografías = new Categorie({name :'Biografías', topics: ['Aprendizaje','Historias','Conciencia','Inspiración','Mentes brillantes']});
+const categoryFinanzas = new Categorie({name :'Finanzas', topics: ['Dinero','Inversionistas','Riqueza','Libertad financiera']});
+const categoryLiderazgo = new Categorie({name :'Liderazgo', topics: ['Principios','Networking','Cambios positivos','Coaching','Resistencia','Desafíos']});
+const categoryPsicología = new Categorie({name :'Psicologia', topics: ['Pensamiento','Entendimiento personal','Descubrimiento','Simbologías']});
+const categoryMarketing = new Categorie({name :'Marketing', topics: ['Ventas','Publicidad','Innovación','Entendimiento humano','Creación de oportunidades']});
+const categoryTecnología = new Categorie({name :'Tecnología', topics: ['Tecnología','Globalización','Start-ups','Empresas influyentes','Innovación','Ideas']});
+const categoryDesarrolloPersonal = new Categorie({name :'DesarrolloPersonal', topics: ['Aventura','Aprendizaje','Cambio de vida']});
 
-export {Categorie, categoryFinance, categoryTecnología, categoryHealth, instanceCounter}
+export {Categorie ,categoryDesarrolloPersonal , categoryTecnología , categoryMarketing, instanceCounter, categoryEmpresa, categoryBiografías, categoryFinanzas, categoryLiderazgo, categoryPsicología}

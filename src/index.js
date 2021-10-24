@@ -1,9 +1,11 @@
-import { Categorie, categoryFinance, categoryTecnología, categoryHealth, instanceCounter } from "./categorie.js";
-import { Book, bookSaludHumana, bookProgramar, bookJavascript, bookInvierte, bookFinanzas, bookAprendeIA} from "./books.js";
+import { Categorie ,categoryDesarrolloPersonal , categoryTecnología , categoryMarketing, instanceCounter, categoryEmpresa, categoryBiografías, categoryFinanzas, categoryLiderazgo, categoryPsicología} from "./categorie.js";
+import { Book, abitos_para_ser_millonario, como_hacer_que_la_gente_haga_cosas, elHombreYsusSimbolos, Propaganda, loInconciente, elLibroRojo, pensarRapidoPensarDespacio, oceanoAzul, EstoEsMarketing, padreRicoPadrePobre_RobertKi, elJuegoDelDinero_RobertKi, elToqueDeMidas_RobertKi, SteveJobs, yoSteveJobs, equiposExtremos, nuncaTiresLaToalla, elModeloToyota, elEstiloVirgin, laExperienciaDelCliente, innovadoresQueHacenHistoria, graciasPorLLegarTarde, four} from "./books.js";
 import { printDOM } from "./generatorRecommendation.js";
 import { chooseAgain, returnCategories, sectionCategories } from "./submitYRestore.js";
 import { generatorInfoBook } from "./generatorInfoBook.js";
 
+const html = document.querySelector('html');
+const body = document.querySelector('body');
 const main = document.querySelector('.main')
 
 const carousel = document.createElement ('section');
@@ -29,7 +31,9 @@ function createButtonsCategory () {
     for (let i = 0; i < instanceCounter.length; i++) {
         const button = document.createElement('button');
         button.className = 'button';
-        button.id = `${instanceCounter[i].name}`;
+        const id = instanceCounter[i].name;
+
+        button.id = `${id}`;
         button.innerText = `${instanceCounter[i].name}`;
         
         buttonNodes.push(button);
@@ -84,7 +88,15 @@ carousel.addEventListener('click', (event)=>{
         carousel.style.filter = 'blur(3px)';
         categories.style.filter = 'blur(3px)';
 
-        generatorInfoBook(book)
+
+        html.style.overflow = 'hidden';
+        body.style.overflow = 'hidden';
+        main.style.overflow = 'hidden';
+
+        generatorInfoBook(book);
+
+        const scrolltop = window.scrollY;
+        infoBook.style.top = `${scrolltop}px`
     }
 })
 
@@ -101,12 +113,16 @@ infoBook.addEventListener('click', (event) => {
         infoBook.remove();
         carousel.style.filter = 'none';
         categories.style.filter = 'none';
+
+        html.style.overflow = 'scroll';
+        body.style.overflow = 'scroll';
+        main.style.overflow = 'scroll';
     }
     if(event.target.className === "content--button") {
         const titleBookcontent = titleBook.innerText;
-        const urlComplement = titleBookcontent.replaceAll(" ", "-");
+        const urlComplement = titleBookcontent.replaceAll(" ", "+");
         
-        const URL = `https://www.amazon.com/s?k=${urlComplement}`;
+        const URL = `https://www.amazon.com/s?k=${urlComplement}+libro`;
         window.open(URL);
     }
 })

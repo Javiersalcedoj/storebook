@@ -10,6 +10,24 @@ html {
   font-size: 62.5%;
 }
 
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
 .cover {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,24 +77,6 @@ html {
   cursor: pointer;
 }
 
-.main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  min-height: 100vh;
-}
-
 .categories {
   width: 80%;
 }
@@ -122,6 +122,7 @@ html {
 
 .categories .categories__form .categories__form__container .button {
   margin-right: 5px;
+  margin-top: 5px;
   padding: 3px;
   border: 1px solid grey;
   border-radius: 5px;
@@ -221,7 +222,7 @@ html {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   background-color: none;
   z-index: 10;
 }
